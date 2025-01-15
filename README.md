@@ -2,26 +2,36 @@
 
 Private Blockchain (permissioned) using QBFT consensus mechanism
 
+
+
 ## Start Node-1
 
 * In the Node-1 directory, start Node-1 using this command below:
 * besu --data-path=data --genesis-file=../genesis.json --rpc-http-enabled --rpc-http-api=ETH,NET,QBFT --host-allowlist="\*" --rpc-http-cors-origins="all"
 * When the node starts, the enode URL displays. Copy the enode URL to specify Node-1 as the bootnode in the following steps.
 
+
+
 ## Start Node-2
 
 * Start another terminal, change to the Node-2 directory and start Node-2 specifying the Node-1 enode URL copied when starting Node-1 as the bootnode:
 * besu --data-path=data --genesis-file=../genesis.json --bootnodes=<Node-1 Enode URL> --p2p-port=30304 --rpc-http-enabled --rpc-http-api=ETH,NET,QBFT --host-allowlist="\*" --rpc-http-cors-origins="all" --rpc-http-port=8546
+
+
 
 ## Start Node-3
 
 * Start another terminal, change to the Node-3 directory and start Node-3 specifying the Node-1 enode URL copied when starting Node-1 as the bootnode:
 * besu --data-path=data --genesis-file=../genesis.json --bootnodes=<Node-1 Enode URL> --p2p-port=30305 --rpc-http-enabled --rpc-http-api=ETH,NET,QBFT --host-allowlist="\*" --rpc-http-cors-origins="all" --rpc-http-port=8547
 
+
+
 ## Start Node-4
 
 * Start another terminal, change to the Node-4 directory and start Node-4 specifying the Node-1 enode URL copied when starting Node-1 as the bootnode:
 * besu --data-path=data --genesis-file=../genesis.json --bootnodes=<Node-1 Enode URL> --p2p-port=30306 --rpc-http-enabled --rpc-http-api=ETH,NET,QBFT --host-allowlist="\*" --rpc-http-cors-origins="all" --rpc-http-port=8548
+
+
 
 ## Confirm the private network is working
 
