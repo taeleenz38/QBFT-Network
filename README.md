@@ -12,7 +12,7 @@ besu --data-path=data --genesis-file=../genesis.json --rpc-http-enabled --rpc-ht
 ```
 * When the node starts, the enode URL displays. Copy the enode URL to specify Node-1 as the bootnode in the following steps.
 
-<be>
+<br>
 
 ## Start Node-2
 
@@ -21,7 +21,7 @@ besu --data-path=data --genesis-file=../genesis.json --rpc-http-enabled --rpc-ht
 besu --data-path=data --genesis-file=../genesis.json --bootnodes=enode://d0b6073615e5de973f0253bdebeda73c4063fd467915d26eb1832d382852bcf855eead92a5e42e00c5f419561023c8382f790f8dcbccd2c87d41d1a7a7837e38@127.0.0.1:30303 --p2p-port=30304 --rpc-http-enabled --rpc-http-api=ETH,NET,QBFT --host-allowlist="*" --rpc-http-cors-origins="all" --rpc-http-port=8546
 ```
 
-<be>
+<br>
 
 ## Start Node-3
 
