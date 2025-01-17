@@ -6,33 +6,32 @@
       "blockperiodseconds" : 2,
       "epochlength" : 30000,
       "requesttimeoutseconds" : 4
-    }
+    },
+    "blockGasLimit": "5000000"
   },
+  
   "nonce" : "0x0",
   "timestamp" : "0x58ee40ba",
   "gasLimit" : "0x47b760",
   "difficulty" : "0x1",
   "mixHash" : "0x63746963616c2062797a616e74696e65206661756c7420746f6c6572616e6365",
-  "coinbase" : "0x43dc4454bf4714517d0b5f0633bdfbf2484028c6",
+  "coinbase" : "0x0000000000000000000000000000000000000000",
   "alloc" : {
     "fe3b557e8fb62b89f4916b721be55ceb828dbd73" : {
       "privateKey" : "8f2a55949038a9610f50fb23b5883af3b4ecb3c3bb792cbcefbd1542c692be63",
-      "balance" : "0xde0b6b3a7640000"
+      "comment" : "private key and this comment are ignored.  In a real chain, the private key should NOT be stored",
+      "balance" : "0xad78ebc5ac6200000"
     },
     "627306090abaB3A6e1400e9345bC60c78a8BEf57" : {
       "privateKey" : "c87509a1c067bbde78beb793e6fa76530b6382a4c0241e5e4a9ec0a0f44dc0d3",
-      "balance" : "0xde0b6b3a7640000"
+      "comment" : "private key and this comment are ignored.  In a real chain, the private key should NOT be stored",
+      "balance" : "90000000000000000000000"
     },
     "f17f52151EbEF6C7334FAD080c5704D77216b732" : {
       "privateKey" : "ae6ae8e5ccbfb04590405997ee2d52d2b330726137b875053c36d94e974d162f",
-      "balance" : "0xde0b6b3a7640000"
+      "comment" : "private key and this comment are ignored.  In a real chain, the private key should NOT be stored",
+      "balance" : "90000000000000000000000"
     }
   },
-  "blockchain": {
-    "nodes": {
-      "generate": true,
-      "count": 4
-    }
-  },
-  "extraData" : "0xf87aa00000000000000000000000000000000000000000000000000000000000000000f854947185ef3519c16149f880dccc073c6b52d2b476d294d5d8478fead31be0ae3b102a4b1ca67df782abd99443dc4454bf4714517d0b5f0633bdfbf2484028c694c81639c3888bf11d4f73316dfd111571cd70636ec080c0"
+  "extraData" : "0xf87aa00000000000000000000000000000000000000000000000000000000000000000f854949d723ff410d4e24550800a2793740368f64af5aa944c6ff8a52f3be02fc57a771914b22990ac61e35e94d568b6780887aaa1afc82ae6b3c1d918ae34ef5494c028762ee711a7df2d6156068e421f0820681b85c080c0"
 }
