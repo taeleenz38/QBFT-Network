@@ -13,8 +13,6 @@ besu --data-path=data --genesis-file=../genesis.json --rpc-http-enabled --rpc-ht
 * When the node starts, the enode URL displays. Copy the enode URL to specify Node-1 as the bootnode in the following steps.
 
 <br><br>
-
-
 ## Start Node-2
 
 * Start another terminal, change to the Node-2 directory and start Node-2 specifying the Node-1 enode URL copied when starting Node-1 as the bootnode:
@@ -23,8 +21,6 @@ besu --data-path=data --genesis-file=../genesis.json --bootnodes=enode://d0b6073
 ```
 
 <br><br>
-
-
 ## Start Node-3
 
 * Start another terminal, change to the Node-3 directory and start Node-3 specifying the Node-1 enode URL copied when starting Node-1 as the bootnode:
@@ -33,8 +29,6 @@ besu --data-path=data --genesis-file=../genesis.json --bootnodes=enode://d0b6073
 ```
 
 <br><br>
-
-
 ## Start Node-4
 
 * Start another terminal, change to the Node-4 directory and start Node-4 specifying the Node-1 enode URL copied when starting Node-1 as the bootnode:
@@ -43,8 +37,6 @@ besu --data-path=data --genesis-file=../genesis.json --bootnodes=enode://d0b6073
 ```
 
 <br><br>
-
-
 ## Confirm the private network is working
 
 * Start another terminal, use curl to call the JSON-RPC API qbft_getvalidatorsbyblocknumber method and confirm the network has four validators:
@@ -74,15 +66,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qbft_getValidatorsByBlockNumber"
 ```
 
 <br><br>
-
-
 ## Deploy smart contracts using truffle
 * npx truffle migrate --network besu
 * Smart contracts will be located in the "contracts" folder while scripts are in the "migrations" folder.
 
 <br><br>
-
-
 ## Considerations
 * If any changes are made to the genesis file (Besu network configuration), all nodes must be shut down.
 * You may need to empty the data directory in each node (e.g. Node-1/data) in order to properly start the nodes again after altering the genesis file.
