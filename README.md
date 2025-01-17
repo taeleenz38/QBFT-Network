@@ -7,7 +7,9 @@ Private Blockchain (permissioned) using QBFT consensus mechanism
 ## Start Node-1
 
 * In the Node-1 directory, start Node-1 using this command below:
-* ```besu --data-path=data --genesis-file=../genesis.json --rpc-http-enabled --rpc-http-api=ETH,NET,QBFT --host-allowlist="*" --rpc-http-cors-origins="all"
+```bash
+besu --data-path=data --genesis-file=../genesis.json --rpc-http-enabled --rpc-http-api=ETH,NET,QBFT --host-allowlist="*" --rpc-http-cors-origins="all"
+```
 * When the node starts, the enode URL displays. Copy the enode URL to specify Node-1 as the bootnode in the following steps.
 
 
