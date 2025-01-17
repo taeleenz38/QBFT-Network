@@ -80,6 +80,9 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"qbft_getValidatorsByBlockNumber"
 * npx truffle migrate --network besu
 * Smart contracts will be located in the "contracts" folder while scripts are in the "migrations" folder.
 
+<br><br>
+
+
 ## Considerations
 * If any changes are made to the genesis file (Besu network configuration), all nodes must be shut down.
 * You may need to empty the data directory in each node (e.g. Node-1/data) in order to properly start the nodes again after altering the genesis file.
